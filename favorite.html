@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Moments</title>
+    <link rel="stylesheet" href="css/favorite.css" />
+</head>
+<body>
+    <h1>Our Favorite Moments!</h1>
+    <div class="gallery">
+        <div style="position: relative;">
+            <div class="tape top"></div>
+            <img src="study.jpg" alt="" onclick="openModal('study.jpg', '&quot;Studying&quot; in the engineering building!')">
+            <div class="tape bottom"></div>
+        </div>
+        <div style="position: relative;">
+            <div class="tape top"></div>
+            <img src="cali.jpg" alt="" onclick="openModal('cali.jpg', 'Our first trip with eachother!')">
+            <div class="tape bottom"></div>
+        </div>
+        <div style="position: relative;">
+            <div class="tape top"></div>
+            <img src="concert.bmp" alt="" onclick="openModal('concert.bmp', 'Going to wave to earth!')">
+            <div class="tape bottom"></div>
+        </div>
+    </div>
+    
+    <div class="modal" id="photoModal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <img id="modalImg" src="" alt="">
+            <p id="modalText"></p>
+        </div>
+    </div>
+
+    <h1>Onto the next page!</h1>
+    <button class="button" onclick="location.href='reasons.html'">
+      Click me!!
+    </button>
+
+    <script>
+        function openModal(imageSrc, text) {
+            document.getElementById('modalImg').src = imageSrc;
+            document.getElementById('modalText').innerText = text;
+            document.getElementById('photoModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('photoModal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

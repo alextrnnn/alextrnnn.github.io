@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reasons Why I Love Abby Tang</title>
+    <link rel="stylesheet" href="css/reasons.css">
+</head>
+<body>
+    <h1>Reasons Why I Love Abby Tang!</h1>
+    <div class="container">
+        <div class="reason" onclick="toggleReason(1)">1. *Click to reveal me*</div>
+        <div id="reason1" class="hidden-text">You're the most hardworking and driven person I know, you always inspire me to work harder</div>
+        
+        <div class="reason" onclick="toggleReason(2)">2. *Click to reveal me*</div>
+        <div id="reason2" class="hidden-text">Your laugh always brightens up my day</div>
+        
+        <div class="reason" onclick="toggleReason(3)">3. *Click to reveal me*</div>
+        <div id="reason3" class="hidden-text">You're lowkey weird sometimes... but I love it!</div>
+       
+        <div class="reason" onclick="toggleReason(4)">4. *Click to reveal me*</div>
+        <div id="reason4" class="hidden-text">Your smile and eyes are so pretty</div>
+        
+        <div class="reason" onclick="toggleReason(5)">5. *Click to reveal me*</div>
+        <div id="reason5" class="hidden-text">You have great music taste and fashion sense</div>
+        
+    </div>
+
+    <h1>One last thing!</h1>
+    <button class="button" onclick="location.href='favorite.html'">
+      Click me!!
+    </button>
+    <script>
+        function toggleReason(num) {
+            var element = document.getElementById('reason' + num);
+            element.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
