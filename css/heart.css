@@ -104,7 +104,7 @@ img {
 
 
 .binary[title]:hover::after {
-    content: attr(title);
+    content: "I love you (in binary)";
     position: absolute;
     background-color: black;
     color: white;
