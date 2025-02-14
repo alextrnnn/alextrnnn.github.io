@@ -91,3 +91,28 @@ img {
         transform: scale(1);
     }
 }
+
+
+.binary {
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.binary:hover {
+    color: red; 
+}
+
+
+.binary[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    top: 100%;
+    left: -39%;
+
+}
