@@ -4,103 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heart Shape Animation</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-        }
-        .heart {
-            position: relative;
-            height: 100px;
-            width: 100px;
-        }
-
-        /* Positioning of images to form the heart shape */
-        .heart img {
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            opacity: 0;
-            transform: scale(0);
-            animation: revealImage 0s ease-out forwards;
-        }
-
-        /* Position each image in the heart shape */
-        .heart img:nth-child(1) { top: -100%; left: 100%; animation-delay: 0.1s; }
-        .heart img:nth-child(2) { top: -200%; left: 200%; animation-delay: 0.1s; }
-        .heart img:nth-child(3) { top: -200%; left: 300%; animation-delay: 0.1s; }
-        .heart img:nth-child(4) { top: -100%; left: 400%; animation-delay: 0.1s; }
-
-        .heart img:nth-child(5) { top: 0; left: 500%; animation-delay: 0.1s; }
-        .heart img:nth-child(6) { top: 100%; left: 500%; animation-delay: 0.1s; }
-
-        .heart img:nth-child(7) { top: 200%; left: 400%; animation-delay: 0.1s; }
-        .heart img:nth-child(8) { top: 300%; left: 300%; animation-delay: 0.1s; }
-        .heart img:nth-child(9) { top: 400%; left: 200%; animation-delay: 0.1s; }
-        .heart img:nth-child(10) { top: 500%; left: 100%; animation-delay: 0.1s; }
-
-        .heart img:nth-child(11) { top: 600%; left: 0%; animation-delay: 0.1s; }
-
-        .heart img:nth-child(12) { top: 500%; left: -100%; animation-delay: 0.1s; }
-        .heart img:nth-child(13) { top: 400%; left: -200%; animation-delay: 0.1s; }
-        .heart img:nth-child(14) { top: 300%; left: -300%; animation-delay: 0.1s; }
-        .heart img:nth-child(15) { top: 200%; left: -400%; animation-delay: 0.1s; }
-
-        .heart img:nth-child(16) { top: 100%; left: -500%; animation-delay: 0.1s; }
-        .heart img:nth-child(17) { top: 0%; left: -500%; animation-delay: 0.1s; }
-
-        .heart img:nth-child(18) { top: -100%; left: -400%; animation-delay: 0.1s; }
-        
-        .heart img:nth-child(19) { top: -200%; left: -300%; animation-delay: 0.1s; }
-        .heart img:nth-child(20) { top: -200%; left: -200%; animation-delay: 0.1s; }
-        .heart img:nth-child(21) { top: -100%; left: -100%; animation-delay: 0.1s; }
-
-
-
-
-
-        @keyframes revealImage {
-            0% {
-                opacity: 0;
-                transform: scale(0);
-            }
-            100% {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/heart.css">
 </head>
 <body>
     <div class="heart">
-        <!-- Replace these img tags with your image sources -->
-        <img src="concert.bmp" alt="Image 1">
-        <img src="concert.bmp" alt="Image 2">
-        <img src="concert.bmp" alt="Image 3">
-        <img src="concert.bmp" alt="Image 4">
-        <img src="concert.bmp" alt="Image 5">
-        <img src="concert.bmp" alt="Image 6">
-        <img src="concert.bmp" alt="Image 7">
-        <img src="concert.bmp" alt="Image 8">
-        <img src="concert.bmp" alt="Image 9">
-        <img src="concert.bmp" alt="Image 10">
-        <img src="concert.bmp" alt="Image 11">
-        <img src="concert.bmp" alt="Image 12">
-        <img src="concert.bmp" alt="Image 13">
-        <img src="concert.bmp" alt="Image 14">
-        <img src="concert.bmp" alt="Image 15">
-        <img src="concert.bmp" alt="Image 16">
-        <img src="concert.bmp" alt="Image 17">
-        <img src="concert.bmp" alt="Image 18">
-        <img src="concert.bmp" alt="Image 19">
-        <img src="concert.bmp" alt="Image 20">
-        <img src="concert.bmp" alt="Image 21">
-        <img src="concert.bmp" alt="Image 22">
+        <img src="/collage/image1.jpg" alt="Image 1">
+        <img src="/collage/image2.jpg" alt="Image 2">
+        <img src="/collage/image3.jpg" alt="Image 3">
+        <img src="/collage/image4.jpg" alt="Image 4">
+        <img src="/collage/image5.jpg" alt="Image 5">
+        <img src="/collage/image6.jpg" alt="Image 6">
+        <img src="/collage/image7.jpg" alt="Image 7">
+        <img src="/collage/image8.jpg" alt="Image 8">
+        <img src="/collage/image9.jpg" alt="Image 9">
+        <img src="/collage/image10.jpg" alt="Image 10">
+        <img src="/collage/image11.jpg" alt="Image 11">
+        <img src="/collage/image12.jpg" alt="Image 12">
+        <img src="/collage/image13.jpg" alt="Image 13">
+        <img src="/collage/image14.jpg" alt="Image 14">
+        <img src="/collage/image15.jpg" alt="Image 15">
+        <img src="/collage/image16.jpg" alt="Image 16">
+        <img src="/collage/image17.jpg" alt="Image 17">
+        <img src="/collage/image18.jpg" alt="Image 18">
+        <img src="/collage/image19.jpg" alt="Image 19">
+        <img src="/collage/image20.jpg" alt="Image 20">
+        <img src="/collage/image21.jpg" alt="Image 21">
+        <img src="/collage/image22.jpg" alt="Image 22">        
+        <h2>01001001 01101100 01101111 01110110 01100101 01111001 01101111 01110101</h2>
+        <h1 id="title1">Happy</h1>
+        <h1 id="title2">Valentines</h1>
+        <h1 id="title3">Day!</h1>
+
+
     </div>
 </body>
 </html>

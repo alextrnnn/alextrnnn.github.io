@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 30px;
+    font-family: "Courier";
+    background-color: #fff5e4;
+    color: #ff9494;
+}
+.heart {
+    position: relative;
+    height: 100px;
+    width: 100px;
+}
+
+/* Positioning of images to form the heart shape */
+.heart img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    transform: scale(0);
+    animation: revealImage 2s ease-out forwards;
+}
+
+.heart img:nth-child(1) { top: -100%; left: 100%; animation-delay: 0.1s; }
+.heart img:nth-child(2) { top: -200%; left: 200%; animation-delay: 0.2s; }
+.heart img:nth-child(3) { top: -200%; left: 300%; animation-delay: 0.3s; }
+.heart img:nth-child(4) { top: -100%; left: 400%; animation-delay: 0.4s; }
+
+.heart img:nth-child(5) { top: 0; left: 500%; animation-delay: 0.5s; }
+.heart img:nth-child(6) { top: 100%; left: 500%; animation-delay: 0.6s; }
+
+.heart img:nth-child(7) { top: 200%; left: 400%; animation-delay: 0.7s; }
+.heart img:nth-child(8) { top: 300%; left: 300%; animation-delay: 0.8s; }
+.heart img:nth-child(9) { top: 400%; left: 200%; animation-delay: 0.9s; }
+.heart img:nth-child(10) { top: 500%; left: 100%; animation-delay: 1.0s; }
+
+.heart img:nth-child(11) { top: 600%; left: 0%; animation-delay: 1.1s; }
+
+.heart img:nth-child(12) { top: 500%; left: -100%; animation-delay: 1.2s; }
+.heart img:nth-child(13) { top: 400%; left: -200%; animation-delay: 1.3s; }
+.heart img:nth-child(14) { top: 300%; left: -300%; animation-delay: 1.4s; }
+.heart img:nth-child(15) { top: 200%; left: -400%; animation-delay: 1.5s; }
+
+.heart img:nth-child(16) { top: 100%; left: -500%; animation-delay: 1.6s; }
+.heart img:nth-child(17) { top: 0%; left: -500%; animation-delay: 1.7s; }
+
+.heart img:nth-child(18) { top: -100%; left: -400%; animation-delay: 1.8s; }
+.heart img:nth-child(19) { top: -200%; left: -300%; animation-delay: 1.9s; }
+.heart img:nth-child(20) { top: -200%; left: -200%; animation-delay: 2.0s; }
+.heart img:nth-child(21) { top: -100%; left: -100%; animation-delay: 2.1s; }
+
+.heart h2 {
+    position: absolute;
+    top: 150%;
+    left: -5%;
+}
+.heart h1 {
+    position: absolute;
+    text-align: center;
+}
+
+#title1 {
+    top:-350%;
+    left: -120%;
+}
+
+#title2 {
+    top:-350%;
+    left: -10%;
+}
+
+#title3 {
+    top:-350%;
+    left: 200%;
+}
+
+img {
+    border: 2px solid #e67373; 
+    border-radius: 8px; /* Slightly rounded corners */
+  }
+@keyframes revealImage {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
